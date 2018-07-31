@@ -10,7 +10,7 @@ This is a Maven build:
 
 Running the service
 -------------------
-Open the project in your IDE and run class OfferdemoApplication.
+Open the project in your IDE and run class OfferApplication.
 This is a Spring Boot application that will start a service on default port 8080.
 
 

@@ -1,6 +1,6 @@
 package com.example.offer.controller;
 
-import com.example.offer.OfferdemoApplication;
+import com.example.offer.OfferApplication;
 import com.example.offer.domain.Offer;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -18,7 +18,7 @@ import static org.junit.Assert.*;
 import static org.junit.Assert.assertThat;
 
 @RunWith(SpringJUnit4ClassRunner.class)
-@SpringBootTest(classes = OfferdemoApplication.class, webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
+@SpringBootTest(classes = OfferApplication.class, webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
 public class OfferControllerRestTemplateTest {
 
     @LocalServerPort
