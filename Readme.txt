@@ -25,10 +25,10 @@ Invoking the service
 --------------------
 A Postman collection is included in file "Offer service.postman_collection"
 To test for example, use these requests:
-   - Create offer 1
-   - Create offer 2
-   - Update offer
-   - Get all offers
+- Create offer 1
+- Create offer 2
+- Update offer
+- Get all offers
 etc...
 
 
@@ -41,5 +41,5 @@ Project design decisions
 
 Tests
 -----
-More unit tests could (should) be added, the current set is not exhaustive. Rather, they are meant to show
-different kinds of unit testing relvevant to this REST service.
+The current set of tests is not exhaustive;  rather it is meant to showcase different kinds of unit testing relevant to
+the given REST service.
