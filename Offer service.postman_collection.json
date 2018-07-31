@@ -1,0 +1,257 @@
+{
+	"info": {
+		"_postman_id": "c0da1070-47ca-46e3-bb1a-4a951d08c4e2",
+		"name": "Offer service",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Create offer 1",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "4e17c69d-2829-4657-b576-9eae2a274333",
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"description\" : \"A half price offer on our famous ballpoint pen \",\n  \"productName\" : \"Ballpoint Pens Black 50 Box\",\n  \"price\" : \"4.40\",\n  \"currency\" : \"GBP\",\n  \"offerLength\" : \"3\",\n  \"cancelled\" : \"false\",\n  \"valid\" : \"false\"\n}\n"
+				},
+				"url": {
+					"raw": "http://localhost:8080/offer-demo/offer",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"offer-demo",
+						"offer"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create offer 2",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "4e17c69d-2829-4657-b576-9eae2a274333",
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"description\" : \"Grab those sharpeners while they last\",\n  \"productName\" : \"Pig Shape Plastic Pencil Sharpener\",\n  \"price\" : \"0.99\",\n  \"currency\" : \"USD\",\n  \"offerLength\" : \"2\"\n}\n"
+				},
+				"url": {
+					"raw": "http://localhost:8080/offer-demo/offer",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"offer-demo",
+						"offer"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update offer",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "4e17c69d-2829-4657-b576-9eae2a274333",
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			],
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"id\" : \"2\",\t\n  \"description\" : \"A half price offer on our famous ballpoint pen \",\n  \"productName\" : \"Ballpoint Pens Black,  50 in a Box\",\n  \"price\" : \"4.10\",\n  \"currency\" : \"GBP\",\n  \"offerLength\" : \"2\",\n  \"cancelled\" : \"false\"\n}\n"
+				},
+				"url": {
+					"raw": "http://localhost:8080/offer-demo/offer",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"offer-demo",
+						"offer"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete offer",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "4e17c69d-2829-4657-b576-9eae2a274333",
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			],
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/offer-demo/offer/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"offer-demo",
+						"offer",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get specific offer",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "4e17c69d-2829-4657-b576-9eae2a274333",
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"id\" : \"10\",\n  \"name\" : \"FlowerPack\",\n  \"description\" : \"AGHSAGSDHASGDHAGSDHASDAHJ\",\n  \"totalPrice\" : \"10\"\n}\n"
+				},
+				"url": {
+					"raw": "http://localhost:8080/offer-demo/offer/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"offer-demo",
+						"offer",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get offers",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "4e17c69d-2829-4657-b576-9eae2a274333",
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"id\" : \"10\",\n  \"name\" : \"FlowerPack\",\n  \"description\" : \"AGHSAGSDHASGDHAGSDHASDAHJ\",\n  \"totalPrice\" : \"10\"\n}\n"
+				},
+				"url": {
+					"raw": "http://localhost:8080/offer-demo/offers",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"offer-demo",
+						"offers"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
